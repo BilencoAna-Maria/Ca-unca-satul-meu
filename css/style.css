@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Onest", system-ui;
+    
+}
+main{
+    min-height: 100vh;
+}
+
+
+
+header{
+    background: #548D95;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+navbar{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+navbar a:hover{
+    color: #ECC199;
+    text-decoration: underline 1px;
+}
+
+footer{
+    min-height: 80px;
+    background: #3E6F6B;
+    text-align: center;
+    color: azure;
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+h1{
+    font-size: 200%;
+}
+h2{
+    font-size: 150%;
+}
+section{
+    padding: 90px 15%;
+
+}
+
+.logo{
+    height: 60px;
+}
+
+#index{
+    background: linear-gradient(#00000031, #0000002e), url('../Images/principală.jpeg');
+    background-size: cover;
+    min-height: 120vh;
+
+}
+
+.index-info{
+    margin-top: 30vh;
+    text-align: center;
+}
+.index-info h1{
+    font-size: 300%;
+    color: #ffffff;
+    border: 2px solid #acaaaa;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #548d9532;
+}
+.link-index{
+    color: white;
+    text-decoration: underline coral 2px;
+    font-size: 15px;
+}
+.link-index1{
+    color: #1f02ff;
+    text-decoration: underline #1f02ff 1.5px;
+    font-size: 15px;
+}
+.link-index:hover{
+    color: #e1722e;
+}
+
+.centered{
+    text-align: center;
+}
+p{
+    text-indent: 15px;
+    line-height: 150%;
+}
+li{
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(coral, coral);
+}
+.vframe{
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #e1722e;
+    box-shadow: rgba(0, 0, 0, 0.24) opx 5px 9px ;
+}
+
+.loc{
+    overflow: auto;
+    border-bottom: 3px #e69562 dashed;
+    margin-bottom: 15px;
+}
+
+.loc img{
+    height: 25vh;
+    width: 25vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.harta{
+
+    width: 100%;
+    height: 40vh;
+}
+
+.row{
+    overflow: auto;
+}
+
+[calas^="col-"]{
+    float: left;
+    padding: 0px 10px;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+.contacte, .cform{
+    border: 2px #5D8679 solid;
+    border-radius: 5px;
+    background-color: #3e7c5948;
+    padding: 5px 5%;
+    height: 625px;
+    margin-bottom:15px ;
+}
+
+.cform input, .cform textarea{
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+#hamburger{
+    color: white;
+    font-size: 28px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/*media e la sfârșit*/
+@media (max-width: 800px){
+
+
+
+    section{
+       padding: 90px 10px;
+    }
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    .vframe{
+        height: 55vw;
+    }
+
+    .col-50{
+        width: 100% !important;
+        float: left;
+        padding: 0px 10px;
+    }
+
+    .contacte, .cform{
+        border: 2px #5D8679 solid;
+        border-radius: 5px;
+        background-color: #3e7c5948;
+        padding: 5px 5%;
+        height: 700px;
+        margin-bottom:15px ;
+    }
+
+    navbar a {
+        display: none;
+    }
+    
+    navbar.mobile a{
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar{
+        display: block;
+    }
+
+    #hamburger{
+    display: block;
+    }
+}
