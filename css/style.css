@@ -69,7 +69,7 @@ section{
 }
 
 #index{
-    background: linear-gradient(#00000031, #0000002e), url('../Images/principală.jpeg');
+    background: linear-gradient(#00000031, #0000002e), url('../images/principală.jpeg');
     background-size: cover;
     min-height: 120vh;
 
