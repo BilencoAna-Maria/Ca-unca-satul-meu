@@ -75,6 +75,13 @@ section{
 
 }
 
+#anunturi{
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    min-height: 120vh;
+    background-size: cover;
+
+}
+
 .index-info{
     margin-top: 30vh;
     text-align: center;
